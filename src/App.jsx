@@ -1,22 +1,30 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import ButtonGroup from "./components/buttongroup";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const printButtonLabel = (event) => {
+    console.log(event.target.name);
+  };
 
   return (
     <>
-      <h1>CV Generator</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
       <div>
-        <span>Editing Section</span>
-        <span>Resume Section Edit Appear Here</span>
+        <h1>CV Generator</h1>
+        <div>
+          <div>
+            <button>Clear Resume</button>
+            <button>Load Example</button>
+          </div>
+          <ButtonGroup
+            buttons={["Content", "Customize", "Download"]}
+            doSomethingAfterClick={printButtonLabel}
+          />
+          <div>
+            <h4>Personal Details</h4>
+          </div>
+        </div>
+        <div>Resume Changes Reflect Here</div>
       </div>
     </>
   );
