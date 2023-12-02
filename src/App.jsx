@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import ButtonGroup from "./components/buttongroup";
+import PersonalForm from "./components/personal-detail";
 
 function App() {
   const printButtonLabel = (event) => {
@@ -10,21 +11,20 @@ function App() {
   return (
     <>
       <div>
-        <h1>CV Generator</h1>
         <div>
-          <div>
-            <button>Clear Resume</button>
-            <button>Load Example</button>
-          </div>
-          <ButtonGroup
-            buttons={["Content", "Customize", "Download"]}
-            doSomethingAfterClick={printButtonLabel}
-          />
-          <div>
-            <h4>Personal Details</h4>
-          </div>
+          <button>Clear Resume</button>
+          <button>Load Example</button>
         </div>
-        <div>Resume Changes Reflect Here</div>
+        <div className="main">
+          <div className="side-buttons">
+            <ButtonGroup
+              buttons={["Content", "Customize", "Download"]}
+              doSomethingAfterClick={printButtonLabel}
+            />
+          </div>
+          <PersonalForm />
+          <div className="resume">Resume Changes Reflect Here</div>
+        </div>
       </div>
     </>
   );

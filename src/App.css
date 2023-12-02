@@ -1,8 +1,30 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main .side-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 100px;
+  border-radius: 40px;
+}
+
+.main .personal-detail {
+  flex-grow: 5;
+  margin-right: 20px;
+}
+
+.main .resume {
+  flex-grow: 8;
 }
 
 .logo {
