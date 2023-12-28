@@ -1,0 +1,24 @@
+.hide {
+    display: none;
+}
+
+.title-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: space-between;
+}
+
+.title-dropdown .grad-cap {
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+.title-dropdown .exp-icon {
+    margin-top: 22px;
+    margin-right: 5px;
+}
+
+.title-dropdown .dropdown-wrapper {
+    width: 100%;
+}

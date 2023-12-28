@@ -1,0 +1,46 @@
+.trigger-button {
+    background-color: #fff;
+    border: none;
+    float: right;
+    cursor: pointer;
+  }
+  
+ .dropdown {
+    background: #fff;
+    width: 100%;
+  } 
+
+  .dropdown-button {
+    flex-basis: 75%;
+    margin-top: 20px;
+  }
+
+  ul {
+    width: 100%;
+    background: #fff;
+    color: #000000;
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.3s ease;
+    padding: 0;
+  }
+  
+  ul.active {
+    height: 100px;
+    /* width: 200px; */
+    /* overflow: auto; */
+    overflow-x: auto;
+    flex-grow: 4;
+  }
+  
+  li {
+    margin-bottom: 2px;
+  }
+  
+  li:hover {
+    /* font-size: 16px; */
+    cursor: pointer;
+  }
